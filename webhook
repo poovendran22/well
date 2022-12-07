@@ -13,7 +13,7 @@ pipeline {
                         echo "Steps in Job2"
 
                         timeout(time: 5, unit: 'SECONDS') {
-                            echo "Timeout completed"
+                            echo "ok"
                         }
                     }
                 }
