@@ -7,7 +7,7 @@ pipeline{
                 echo "new request"
                 }
                 }
-          stage('Pre Variables'){
+          stage('Pre '){
             steps{
             echo "test"
             }
