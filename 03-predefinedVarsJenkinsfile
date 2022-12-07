@@ -4,7 +4,15 @@ pipeline{
         stage('Pre Variables'){
             steps{
                 echo "Predefined variable value is $BUILD_NUMBER $WORKSPACE "
+                echo "new request"
+                }
+                }
+          stage('Pre '){
+            steps{
+            echo "test"
             }
-        }
-    }
-}
+            }
+            }
+            }
+            
+   
