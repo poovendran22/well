@@ -1,16 +1,22 @@
 pipeline {
     agent any
     stages {
-        stage("Env Variables") {
-            steps {
-                sh "printenv"
+        stage("Build") {
+            parallel{
+                stage('Job1'){
+                    steps{
+                        echo "Steps in Job1"
+                    }
+                }
+                stage('Job2'){
+                    steps{
+                        echo "Steps in Job2"
 
-	 stage("Job2") {
-                    steps {
-                        echo "hi poovendran"
-
-		   }
-		}
+                        timeout(time: 5, unit: 'SECONDS') {
+                            echo "Timeout completed"
+                        }
+                    }
+                }
             }
         }
     }
