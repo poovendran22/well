@@ -4,6 +4,12 @@ pipeline {
         stage("Env Variables") {
             steps {
                 sh "printenv"
+	stage('Job2'){
+                    steps{
+                        echo "hi poovendran"
+
+		   }
+		}
             }
         }
     }
