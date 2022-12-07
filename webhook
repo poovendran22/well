@@ -8,12 +8,12 @@ pipeline {
                         echo "Steps in Job1"
                     }
                 }
-                stage('Job2'){
+                stage('new job'){
                     steps{
                         echo "Steps in Job2"
 
                         timeout(time: 5, unit: 'SECONDS') {
-                            echo "ok welcome "
+                            echo "ok welcome boss "
                         }
                     }
                 }
