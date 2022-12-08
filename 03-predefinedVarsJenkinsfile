@@ -8,6 +8,8 @@ pipeline{
             stage('Pre Variables new'){
                 steps{
                 echo "Predefined variable value is"
+                }
+                }
                  }
             }
             }
